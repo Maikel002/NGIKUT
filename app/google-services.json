@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "131968021454",
+    "firebase_url": "https://ngikut-7a6d5.firebaseio.com",
+    "project_id": "ngikut-7a6d5",
+    "storage_bucket": "ngikut-7a6d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131968021454:android:41ae03ece0389f7174319f",
+        "android_client_info": {
+          "package_name": "com.pam.ngikut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131968021454-4lcmbq7fbtt2ea6njkauf0q0lg9ho8fm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pam.ngikut",
+            "certificate_hash": "a21eaca9becd5bc42127838801ac99498b4fbd54"
+          }
+        },
+        {
+          "client_id": "131968021454-al8os97jktg8m929kjs4u6er8hittik3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmu4ZHJJejZPSrRfvP6xvc3icxWvWtJvA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131968021454-al8os97jktg8m929kjs4u6er8hittik3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
