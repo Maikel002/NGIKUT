@@ -32,18 +32,18 @@ public class MainActivity extends AppCompatActivity {
         openFragment(HomeFragment.newInstance("", ""));
         signOutBtn = (Button) findViewById(R.id.signOutButton);
 
-        signOutBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                Intent i = new Intent(MainActivity.this, LoginActivity.class);
-                Toast.makeText(getApplicationContext(), "Signed Out", Toast.LENGTH_SHORT).show();
-                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(i);
-                finish();
-
-            }
-        });
+//        signOutBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                FirebaseAuth.getInstance().signOut();
+//                Intent i = new Intent(MainActivity.this, LoginActivity.class);
+//                Toast.makeText(getApplicationContext(), "Signed Out", Toast.LENGTH_SHORT).show();
+//                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//                startActivity(i);
+//                finish();
+//
+//            }
+//        });
     }
 
     public void openFragment(Fragment fragment) {
