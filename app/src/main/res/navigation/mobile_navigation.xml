@@ -8,7 +8,11 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.pam.ngikut.ui.home.HomeFragment"
+<<<<<<< HEAD
         android:label="@string/app_name"
+=======
+        android:label="@string/title_home"
+>>>>>>> 34985ba8ea51752b92eff463d7101759cffa3ac8
         tools:layout="@layout/fragment_home" />
 
     <fragment
@@ -25,7 +29,12 @@
 
     <fragment
         android:id="@+id/navigation_profile"
+<<<<<<< HEAD
         android:name="com.pam.ngikut.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
+=======
+        android:name="com.pam.ngikut.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+>>>>>>> 34985ba8ea51752b92eff463d7101759cffa3ac8
         tools:layout="@layout/fragment_profile" />
 </navigation>

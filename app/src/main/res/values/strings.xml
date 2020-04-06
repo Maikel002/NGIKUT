@@ -14,9 +14,16 @@
     <string name="resetPasswordText">To reset password, enter your email, press the button and check your email for further instructions</string>
     <string name="resetPasswordBtn">Reset Password</string>
     <string name="returnToLoginTextView">Return to Login Screen</string>
+<<<<<<< HEAD
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_profile">Profile</string>
     <string name="createEmail">Please enter your E-mail</string>
+=======
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+>>>>>>> 34985ba8ea51752b92eff463d7101759cffa3ac8
 </resources>

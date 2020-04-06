@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
 
+=======
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main2"></activity>
+>>>>>>> 34985ba8ea51752b92eff463d7101759cffa3ac8
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,16 +23,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
 
+=======
+<!--        <activity-->
+<!--            android:name=".MainActivity"-->
+<!--            android:theme="@style/AppThemefull" />-->
+<!--        <activity-->
+            android:name=".ProfileActivity"
+            android:theme="@style/AppThemefull" />
+>>>>>>> 34985ba8ea51752b92eff463d7101759cffa3ac8
         <activity
             android:name=".SignUpActivity"
             android:theme="@style/AppThemefull" />
         <activity
             android:name=".ResetPasswordActivity"
             android:theme="@style/AppThemefull" />
+<<<<<<< HEAD
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme"></activity>
+=======
+>>>>>>> 34985ba8ea51752b92eff463d7101759cffa3ac8
     </application>
 
 </manifest>
