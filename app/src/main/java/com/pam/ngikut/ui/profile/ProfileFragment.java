@@ -1,14 +1,10 @@
 package com.pam.ngikut.ui.profile;
 
-<<<<<<< HEAD
 import android.content.Intent;
-=======
->>>>>>> 34985ba8ea51752b92eff463d7101759cffa3ac8
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-<<<<<<< HEAD
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -68,20 +64,4 @@ public class ProfileFragment extends Fragment {
             FirebaseAuth.getInstance().removeAuthStateListener(mAuthStateListener);
         }
     }
-=======
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-
-import com.pam.ngikut.R;
-
-public class ProfileFragment extends Fragment {
-
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_profile, container, false);
-        return root;
-    }
->>>>>>> 34985ba8ea51752b92eff463d7101759cffa3ac8
 }
