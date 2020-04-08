@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NGIKUT</string>
+    <string name="emailEdit">Email</string>
+    <string name="passwordEdit">Kata Sandi</string>
+    <string name="loginButton">Masuk</string>
+    <string name="signUp">Belum punya akun? Daftar</string>
+    <string name="signUpTxt">Daftar untuk melihat foto dan tempat di Bali</string>
+    <string name="loginText">Masuk</string>
+    <string name="signOutText">Keluar</string>
+    <string name="signUPText">Masuk</string>
+    <string name="nameEdit">Nama</string>
+    <string name="confirmPasswordEdit">Konfirmasi Sandi</string>
+    <string name="forgotPasswordText">Lupa Kata Sandi ?</string>
+    <string name="resetPasswordText">Masukkan email Anda dan kami akan mengirimkan Anda tautan untuk kembali ke akun Anda.</string>
+    <string name="resetPasswordBtn">Reset Sandi</string>
+    <string name="returnToLoginTextView">Punya akun? Masuk</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_dashboard">List</string>
+    <string name="title_notifications">Peta</string>
+    <string name="title_profile">Profil</string>
+    <string name="createEmail">Masukkan email Anda</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="homeTxt">5 pantai terbaik di Bali, Indonesia!</string>
+    <string name="ListTitle">Daftar pantai yang ada di Bali, Indonesia</string>
+</resources>
