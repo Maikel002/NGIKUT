@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">NGIKUT</string>
+
+    <string name="emailEdit">Email</string>
+    <string name="passwordEdit">Contraseña</string>
+    <string name="loginButton">Iniciar sesión</string>
+    <string name="signUp">¿No tienes una cuenta? Regístrate</string>
+    <string name="signUpTxt">Regístrate para ver fotos y lugares en Bali</string>
+    <string name="loginText">Iniciar sesión</string>
+    <string name="signOutText">desconectar</string>
+    <string name="signUPText">Regístrate</string>
+    <string name="nameEdit">Nombre</string>
+    <string name="confirmPasswordEdit">Confirmar contraseña</string>
+    <string name="forgotPasswordText">Se te olvidó tu contraseña ?</string>
+    <string name="resetPasswordText">Ingrese su correo electrónico y le enviaremos un enlace para volver a ingresar a su cuenta.</string>
+    <string name="resetPasswordBtn">Restablecer la contraseña</string>
+    <string name="returnToLoginTextView">¿Tener una cuenta? Iniciar sesión</string>
+    <string name="title_home">Houmee</string>
+    <string name="title_dashboard">Lista</string>
+    <string name="title_notifications">Mapa</string>
+    <string name="title_profile">Perfil</string>
+    <string name="createEmail">Por favor introduzca su correo electrónico</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="homeTxt">¡Las 5 mejores playas de Bali, Indonesia!</string>
+    <string name="ListTitle">Lista de playas en Bali, Indonesia</string>
+</resources>
