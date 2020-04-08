@@ -11,20 +11,25 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.AuthResult;
+import com.pam.ngikut.ui.profile.ProfileFragment;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
-    private FirebaseAuth firebaseAuth;
     EditText emailEditText;
     EditText passwordEditText;
     Button loginBtn;
     TextView resetBtn;
     TextView createAccountBtn;
+    private FirebaseAuth firebaseAuth;
+    private FirebaseAuth.AuthStateListener firebaseAuthListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +44,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         createAccountBtn = (TextView) findViewById(R.id.createAccTextView);
         createAccountBtn.setOnClickListener(this);
         firebaseAuth = FirebaseAuth.getInstance();
+
+        createAuthStateListener();
 
     }
 
@@ -111,6 +118,37 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 //        updateUI(currentUser);
 //    }
 //will work on later
+    }
+
+        private void createAuthStateListener() {
+        firebaseAuthListener = new FirebaseAuth.AuthStateListener() {
+
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                final FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user != null) {
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                    finish();
+                }
+            }
+
+        };
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        firebaseAuth.addAuthStateListener(firebaseAuthListener);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (firebaseAuthListener != null) {
+            firebaseAuth.removeAuthStateListener(firebaseAuthListener);
+        }
     }
 
 }

@@ -45,7 +45,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         signUpBtn = (Button) findViewById(R.id.signUpButton);
         signUpBtn.setOnClickListener(this);
 
-        createAuthStateListener();
+//        createAuthStateListener();
 
     }
 
@@ -77,7 +77,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
 
         if (TextUtils.isEmpty(createEmail)) {
-            Toast.makeText(this, "Please enter email", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.createEmail, Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -96,6 +96,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                             FirebaseUser user = firebaseAuth.getCurrentUser();
                             Toast.makeText(SignUpActivity.this, "Welcome!",
                                     Toast.LENGTH_SHORT).show();
+                            Intent i = new Intent(SignUpActivity.this, MainActivity.class);
+                            startActivity(i);
 
                         } else {
                             // If sign in fails, display a message to the user.
@@ -112,36 +114,36 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     }
 
 
-    private void createAuthStateListener() {
-        firebaseAuthListener = new FirebaseAuth.AuthStateListener() {
+//    private void createAuthStateListener() {
+//        firebaseAuthListener = new FirebaseAuth.AuthStateListener() {
+//
+//            @Override
+//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+//                final FirebaseUser user = firebaseAuth.getCurrentUser();
+//                if (user != null) {
+//                    Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+//                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//                    startActivity(intent);
+//                    finish();
+//                }
+//            }
+//
+//        };
+//    }
 
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                final FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user != null) {
-                    Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    startActivity(intent);
-                    finish();
-                }
-            }
 
-        };
-    }
-
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        firebaseAuth.addAuthStateListener(firebaseAuthListener);
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        if (firebaseAuthListener != null) {
-            firebaseAuth.removeAuthStateListener(firebaseAuthListener);
-        }
-    }
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        firebaseAuth.addAuthStateListener(firebaseAuthListener);
+//    }
+//
+//    @Override
+//    public void onStop() {
+//        super.onStop();
+//        if (firebaseAuthListener != null) {
+//            firebaseAuth.removeAuthStateListener(firebaseAuthListener);
+//        }
+//    }
 
 }
